@@ -1,5 +1,5 @@
-# Few-Shot Fine-Grained Classification of Remote Sensing Images with Knowledge-Guided CLIP
-Official implementation of 'Few-Shot Fine-Grained Classification of Remote Sensing Images with Knowledge-Guided CLIP
+# Distribution-Aware CLIP-Adapter with Fine-Grained Text for Few-Shot Fine-Grained Classification
+Official implementation of 'Distribution-Aware CLIP-Adapter with Fine-Grained Text for Few-Shot Fine-Grained Classification'
 
 
 
@@ -17,7 +17,7 @@ DAWA first obtains zero-shot knowledge via the similarity between test image fea
 Create a conda environment and install dependencies:
 ```bash
 git clone https://github.com/JingMing77/dawa-clip.git
-cd Tip-Adapter
+cd dawa-clip
 
 conda create -n dawa python=3.7
 conda activate dawa
@@ -30,13 +30,13 @@ conda install pytorch torchvision cudatoolkit
 
 ### Dataset
 ├─CLASS 1
-├───1.png
-├───2.png
-├───...
+  ├───1.png
+  ├───2.png
+  ├───...
 ├─CLASS 2
-├───1.png
-├───2.png
-├───...
+  ├───1.png
+  ├───2.png
+  ├───...
 ├─...
 
 ## Get Started
