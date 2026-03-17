@@ -14,7 +14,7 @@ load_pre_feat: False
 search_hp: True
 # search_hp: False
 
-seed: 137
+seed: 1
 
 data_split_json: 'split_whu_rs19.json'
 search_scale: [12, 500]  # beta, alpha / [12, 10]
