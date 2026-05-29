@@ -16,7 +16,7 @@ search_hp: True
 
 seed: 1
 
-data_split_json: 'split_fgscr42_2.json'
+data_split_json: 'split_fgscr42.json'
 search_scale: [12, 500]  # beta, alpha / [12, 10]
 search_step: [200, 50]
 
@@ -30,7 +30,7 @@ shots: 16
 backbone: "RN50" # RN50 || ViT-B/32 || ViT-L/14
 
 lr: 0.0005
-augment_epoch: 2
+augment_epoch: 10
 train_epoch: 10
 entropy_weight: 0.1
 contrast_weight: 0.01

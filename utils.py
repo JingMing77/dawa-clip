@@ -258,7 +258,7 @@ def search_hp_dawa(cfg, gda_params, cache_keys, cache_values, features, labels, 
 
         best_acc = 0
         best_beta, best_alpha = 0, 0
-        gamma = 2. /(1. + torch.exp(torch.tensor(-2.5*(int(cfg["shots"]) - 5.))))
+        gamma = 1.0 # 2. /(1. + torch.exp(torch.tensor(-2.5*(int(cfg["shots"]) - 5.))))
 
         clip_logits = 100. * features @ clip_weights
         if gda_adapter:

@@ -31,7 +31,7 @@ shots: 1
 backbone: "RN50" #'RN50'
 
 lr: 0.005
-augment_epoch: 2
+augment_epoch: 10
 train_epoch: 10
 entropy_weight: 0.1
 contrast_weight: 0.01

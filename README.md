@@ -8,7 +8,7 @@ Official implementation of 'Distribution-Aware CLIP-Adapter with Fine-Grained Te
 DAWA first obtains zero-shot knowledge via the similarity between test image features and fine-grained captions, then fuses this zero-shot knowledge with two types of knowledge generated from the support set. The instance knowledge that comes from the visual features of samples extracted by CLIP’s visual encoder, and the Distribution-Aware knowledge which is derived from the statistical distribution of visual features modeled via Gaussian Discriminant Analysis.  
 
 <div align="center">
-  <img width=900 src="fig2.png"/>
+  <img width=900 src="overview.png"/>
 </div>
 
 

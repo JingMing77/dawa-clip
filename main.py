@@ -70,7 +70,7 @@ def run_dawa(cfg, cache_keys, cache_values, gda_params, val_features, val_labels
 
     # Fused 
     tip_logits = ((-1) * (best_gda_beta - best_gda_beta * affinity)).exp() @ cache_values
-    gamma = 2. /(1. + torch.exp(torch.tensor(-2.5*(int(cfg["shots"]) - 5.))))
+    gamma = 1.0 # 2. /(1. + torch.exp(torch.tensor(-2.5*(int(cfg["shots"]) - 5.))))
     tg_logits = logits_fuse(clip_logits, [tip_logits, gda_logits], gamma)
     fuse_logits = clip_logits + tg_logits * best_gda_alpha
     acc = cls_acc(fuse_logits, test_labels)
@@ -96,7 +96,7 @@ def run_dawa_F(cfg, cache_keys, cache_values, gda_params,
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, cfg['train_epoch'] * len(train_loader_F))
     
     beta, alpha = cfg['init_beta'], cfg['init_alpha']
-    gamma = 2. /(1. + torch.exp(torch.tensor(-2.5*(int(cfg["shots"]) - 5.))))
+    gamma = 1.0 # 2. /(1. + torch.exp(torch.tensor(-2.5*(int(cfg["shots"]) - 5.))))
     best_acc, best_epoch = 0.0, 0
     start_epoch = 0
     writer = SummaryWriter(log_dir=cfg['cache_dir'] + '/runs')
