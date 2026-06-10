@@ -62,6 +62,12 @@ This repo benefits from [CLIP](https://github.com/openai/CLIP), [CoOp](https://g
 
 ## Citation
 ```bash
-
+@article{chen2026distribution,
+  title={Distribution-Aware CLIP-Adapter with Fine-Grained Text for Few-Shot Fine-Grained Classification},
+  author={Chen, Jingming and Huang, Zhaoyang and Wang, Feng and Wen, Zixiao and Zhu, Jingxing and Zhou, Guangyao},
+  journal={Remote Sensing},
+  year={2026},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
 ```
 
